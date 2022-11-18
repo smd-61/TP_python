@@ -10,10 +10,11 @@ print("choisissez la valeur de x")
 x=int(input())
 print("choisissez la valeur de y")
 y=int(input())
+print(f"Avant permutation: \n -x : {x} \n -y : {y}")
 tmp=x
 x=y
 y=tmp
-print("Les valeurs ont été permuter")
+print(f"Après permutation: \n -x : {x} \n -y : {y}")
 
 #ex2
 print("Quel est votre age?")
@@ -53,7 +54,7 @@ eau=2*nbConvives/BASE
 ail=2*nbConvives/BASE
 pain=400*nbConvives/BASE
 
-print(f"Il vous faudra donc {fromage}gramme de fromage, {eau}L d'eau, {ail} ail et enfin {pain} gramme de pain")
+print(f"-Il vous faudra donc {fromage}gramme de fromage\n- {eau}L d'eau\n- {ail} ail \n -{pain} gramme de pain\n")
 
 
 #ex5
