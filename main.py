@@ -4,6 +4,8 @@
 # Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 
 #EX1
+import random
+
 print("choisissez la valeur de x")
 x=int(input())
 print("choisissez la valeur de y")
@@ -69,3 +71,28 @@ if  c==0:
     print("et pair.")
 else:
     print("et impair.")
+
+#tp2exo6.py
+import random
+a=random.randint(0,100)
+if a<50:
+    print("PILE!")
+else:
+    print("FACE!")
+
+#tp2exo7.py
+import random
+a=random.randint(0,2)
+if a<2:
+    print("PILE!")
+else:
+    print("FACE!")
+
+#EX8
+print("Entrer un nombre")
+x=float(input())
+
+if (x>=2 and x<3) or (x>0 and x<=1) or (x>=(-10) and x<(-2)):
+    print("X appartient à I")
+else:
+    print("X n'appartient pas à I")
