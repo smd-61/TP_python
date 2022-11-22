@@ -93,7 +93,7 @@ else:
 print("Entrer un nombre")
 x=float(input())
 
-if (x>=2 and x<3) or (x>0 and x<=1) or (x>=(-10) and x<(-2)):
+if (x<3 not x<2) or (x==2 or x=1 or x=(-2)) or (x<1 not x<0) or (x<(-2) not x<(-10)):
     print("X appartient à I")
 else:
     print("X n'appartient pas à I")
