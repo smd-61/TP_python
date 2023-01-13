@@ -12,7 +12,7 @@ if heure>160:
 else:
     n=heure
     n25 = 0
-    n = 0
+    n50 = 0
 
 final=(n*prix)+n25*(prix*1.25)+n50*(prix*1.50)
 
