@@ -56,7 +56,7 @@ print(f"Saisie du second vecteur :\nv2[0] = {v2[0]}\nv2[1] = {v2[1]}\nv2[2] = {v
 print("Le produit scalaire de v1 par v2 vaut", pro)
 
 #ex4 Partie 1 :
-L1 = [2, 7, 5, 6, 7, 1, 6, 2, 1, 7, 6]
+L1 = [2, 7, 5, 7, 1, 6, 2, 1, 7, 6,6 ,6]
 L2 = []
 mm=0
 for i in range (0,10):
@@ -87,8 +87,15 @@ if b==d:
             mm=0
 print(f"Le nombre le plus frequent dans la liste est le :{mm} ({p}x)")
 
+#Partie2
+L1 = [2, 7, 5, 6, 7, 1, 6, 2, 1, 7, 6]
+a=0
+b=0
+i=0
+for i in range(0, len(L1)):
 
-""" ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** *
-* Ne rien modifier apres cette ligne.
-** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** ** * /
-"""
+        if L1.count(L1[i]) >a :
+            a=L1.count(L1[i])
+            b=L1[i]
+print(f"Le nombre le plus frequent dans la liste est le :{b} ({a}x)")
+
