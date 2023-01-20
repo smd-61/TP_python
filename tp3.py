@@ -127,3 +127,50 @@ elif x==2:
         print("Le factorielle de 0 est 1")
 else:
     print("ERROR")
+    
+    
+#exercice 5
+a=int(input("Donnez l’heure de début de la location (un entier) :"))
+b=int(input("Donnez l’heure de fin de la location (un entier) :"))
+x=0
+y=0
+while a>=24 or a<0:
+    print("Les heures doivent être comprises entre 0 et 24 !","\n")
+    a = int(input("Veuillez redonnez l’heure de début de la location (un entier) :"))
+while b>=24 or b<0:
+    print("Les heures doivent être comprises entre 0 et 24 !", "\n")
+    b= int(input("Veuillez redonnez l’heure de fin de la location (un entier) :"))
+
+while a==b:
+    print("Attention ! l’heure de fin est identique à l’heure de début.")
+    a = int(input("Veuillez redonnez l’heure de début de la location (un entier) :"))
+    b = int(input("Veuillez redonnez l’heure de fin de la location (un entier) :"))
+
+while a>b:
+    print("Attention ! le début de la location est après la fin ...")
+    a = int(input("Veuillez redonnez l’heure de début de la location (un entier) :"))
+    b = int(input("Veuillez redonnez l’heure de fin de la location (un entier) :"))
+
+if a<7 and b<7:
+    x=b-a
+elif a<7 and (b>7 and b<17):
+    x=7-a
+    y=b-7
+elif a<7 and b>17:
+    x = 7 - a + b-17
+    y=10
+elif (a>7 and a<17) and (b>7 and b<17):
+    y= b-a
+elif (a>7 and a<17) and b>17:
+    y=17-a
+    x=b-17
+else:
+    x=b-a
+
+c=float(2*y+x)
+print("Vous avez loué votre vélo pendant")
+if x!=0:
+    print(x,"heure(s) au tarif horaire de 1.0 euro(s)")
+if y!=0:
+    print(y,"heure(s) au tarif horaire de 2.0 euro(s)")
+print("Le montant total à payer est de ",c,"euro (s).")
